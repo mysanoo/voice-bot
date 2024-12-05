@@ -25,7 +25,7 @@ public class RequestToOpenAI {
     public String requestToChatGPT(String question){
         HttpHeaders headers = new HttpHeaders();
 
-        headers.add("Authorization", "Bearer " + TextToSpeech.token);
+        headers.add("Authorization", "Bearer " + "TextToSpeech.token");
         headers.add("Content-Type", "application/json");
 
         List<Map<String, String>> messages = new ArrayList<>();
