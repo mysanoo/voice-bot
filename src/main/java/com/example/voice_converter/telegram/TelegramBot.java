@@ -41,7 +41,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private final ObjectMapper objectMapper;
 
-    private static final String token = "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";
+//    private static final String token = "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";
 
 
 
@@ -127,8 +127,8 @@ public class TelegramBot extends TelegramLongPollingBot {
                         .build()
         );
 
-        var urlDownloadFile = file.getFileUrl(token);
-        return getByteArrayFromUrl(urlDownloadFile);
+//        var urlDownloadFile = file.getFileUrl(token);
+//        return getByteArrayFromUrl(urlDownloadFile);
     }
 
     @SneakyThrows
