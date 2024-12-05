@@ -24,6 +24,7 @@ import java.util.UUID;
 public class TextToSpeech {
 
     private final VoiceService voiceService;
+    public static final String token = "";
     private static final String url = "https://api.openai.com/v1/audio/speech";
     private final RestTemplate restTemplate = new RestTemplate();
 
@@ -40,7 +41,7 @@ public class TextToSpeech {
     public Voice sendToOpenAI(String text, User user){
         HttpHeaders headers = new HttpHeaders();
 
-        headers.add("Authorization", "Bearer " + "token");
+//        headers.add("Authorization", "Bearer " + token);
         headers.add("Content-Type", "application/json");
 
         Map<String, Object> requestBody = new HashMap<>();
