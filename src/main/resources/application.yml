@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: voice-converter
+    datasource:
+        url: jdbc:postgresql://localhost:5432/movie
+        username: postgres
+        password: KXumora1220
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        properties:
+            hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+        hibernate:
+            ddl-auto: 'update'
+server:
+    port: 8008
+
