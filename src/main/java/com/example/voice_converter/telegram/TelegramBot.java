@@ -127,8 +127,8 @@ public class TelegramBot extends TelegramLongPollingBot {
                         .build()
         );
 
-//        var urlDownloadFile = file.getFileUrl(token);
-//        return getByteArrayFromUrl(urlDownloadFile);
+        var urlDownloadFile = file.getFileUrl("token");
+        return getByteArrayFromUrl(urlDownloadFile);
     }
 
     @SneakyThrows
